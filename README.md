@@ -20,6 +20,7 @@ git clone https://github.com/enflujo/sitios-analitica.git
 
 ### Claves para contenedores
 Hacer una copia del archivo `.env.ejemplo` y llamarlo `.env` (o crear uno con las siguientes variables).
+*Las variables se deciden aquí
 
 ```bash
 # Nombre de la base de datos en Postgres
@@ -36,7 +37,7 @@ PUERTO=...
 ```
 
 ### Iniciar con Docker
-Umami es una aplicación de Node y se puede instalar directamente clonano el código desde su [repositorio](https://github.com/mikecao/umami). En nuestro caso vamos a usar Docker para no depender de una base de datos administrada en el servidor. 
+Umami es una aplicación de Node y se puede instalar directamente clonando el código desde su [repositorio](https://github.com/mikecao/umami). En nuestro caso vamos a usar Docker para no depender de una base de datos administrada en el servidor. 
 
 Ver el archivo `docker-compose.yml` para saber que versión de Postgres y Umami se están instalando (de manera predeterminada se usan las mas recientes de cada una).
 

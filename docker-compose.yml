@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   bd:
-    container_name: analitica-bd
+    container_name: cerosetenta-analitica
     image: postgres:13.5-alpine
     restart: unless-stopped
     networks:
@@ -16,7 +16,7 @@ services:
       - ./datos:/var/lib/postgresql/data
   
   umami:
-    container_name: analitica-app
+    container_name: cerosetenta-analitica
     image: ghcr.io/mikecao/umami:postgresql-latest
     restart: unless-stopped
     networks:
